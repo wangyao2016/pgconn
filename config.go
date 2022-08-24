@@ -431,6 +431,12 @@ func parseEnvSettings() map[string]string {
 		"PGTARGETSESSIONATTRS": "target_session_attrs",
 		"PGSERVICE":            "service",
 		"PGSERVICEFILE":        "servicefile",
+		// support new env
+		"PGDATESTYLE":          "datestyle",
+		"PGTZ":                 "timezone",
+		"PGGEQO":               "geqo",
+		"PGOPTIONS":            "options",
+		"HE3PROXY":             "he3proxy",
 	}
 
 	for envname, realname := range nameMap {
