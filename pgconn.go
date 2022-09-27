@@ -377,7 +377,7 @@ func connect(ctx context.Context, config *Config, fallbackConfig *FallbackConfig
 				}
 			}
 			return pgConn, nil
-		case *pgproto3.ParameterStatus, *pgproto3.NoticeResponse:
+		case *pgproto3.ParameterStatus, *pgproto3.NoticeResponse, *pgproto3.LsnResponse:
 			// handled by ReceiveMessage
 		case *pgproto3.ErrorResponse:
 			pgConn.conn.Close()

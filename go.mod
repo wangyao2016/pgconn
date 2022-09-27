@@ -13,3 +13,5 @@ require (
 	golang.org/x/crypto v0.0.0-20220722155217-630584e8d5aa
 	golang.org/x/text v0.3.7
 )
+
+replace github.com/jackc/pgproto3/v2 v2.3.1 => github.com/wangyao2016/pgproto3/v2 v2.3.2
